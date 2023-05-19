@@ -92,20 +92,6 @@ function AboutUs() {
             >
               회사소개
             </MKTypography>
-            {/*<MKBox display="flex" justifyContent="center" alignItems="center">*/}
-            {/*  <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>*/}
-            {/*    <i className="fab fa-facebook" />*/}
-            {/*  </MKTypography>*/}
-            {/*  <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>*/}
-            {/*    <i className="fab fa-instagram" />*/}
-            {/*  </MKTypography>*/}
-            {/*  <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>*/}
-            {/*    <i className="fab fa-twitter" />*/}
-            {/*  </MKTypography>*/}
-            {/*  <MKTypography component="a" variant="body1" color="white" href="#">*/}
-            {/*    <i className="fab fa-google-plus" />*/}
-            {/*  </MKTypography>*/}
-            {/*</MKBox>*/}
           </Grid>
         </Container>
       </MKBox>

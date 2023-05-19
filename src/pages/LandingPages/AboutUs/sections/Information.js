@@ -35,8 +35,11 @@ function Information() {
                 <MKBox mb={{ xs: 5, md: 0 }}>
                   <DefaultInfoCard
                     icon="public"
-                    title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="기업개요"
+                    description="기업명 : 진영공업(주)
+                    대표이사 : 이영웅
+
+                    "
                   />
                 </MKBox>
               </Grid>
