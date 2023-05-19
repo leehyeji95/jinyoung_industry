@@ -33,7 +33,7 @@ import footerRoutes from "footer.routes";
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 
-function ContactUs() {
+function Location() {
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
@@ -100,23 +100,6 @@ function ContactUs() {
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Full Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Email"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
                   <Grid item xs={12}>
                     <MKInput
                       variant="standard"
@@ -146,4 +129,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Location;

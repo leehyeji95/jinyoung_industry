@@ -14,8 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
-import ContactUs from "pages/LandingPages/ContactUs";
+import Location from "pages/LandingPages/Location";
 
-export default function ContactUsPage() {
-  return <ContactUs />;
+export default function LocationPage() {
+  return <Location />;
 }

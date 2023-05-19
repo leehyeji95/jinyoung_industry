@@ -24,8 +24,8 @@ export default [
   },
   {
     image: `${imagesPrefix}/contact.jpg`,
-    name: "Contact Us Page",
-    route: "/pages/landing-pages/contact-us",
+    name: "Location Page",
+    route: "/pages/landing-pages/location",
   },
   {
     image:

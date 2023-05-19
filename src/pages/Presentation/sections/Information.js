@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    사업영역
                     <br />
-                    Material Kit
+                    <br />
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="자동차 SEAT 조립용 플라스틱 사출품"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="경영방침"
+                description="품질보장, 주인의식, 자주적인 능력, 등 내용 쓰기"
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "주요 생산품",
                 }}
               />
             </RotatingCard>
