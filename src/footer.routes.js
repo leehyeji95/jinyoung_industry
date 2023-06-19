@@ -6,6 +6,7 @@ import logoCT from "assets/images/logo-ct-dark.png";
 
 const date = new Date().getFullYear();
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   brand: {
     name: "진영공업",
