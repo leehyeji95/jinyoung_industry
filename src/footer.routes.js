@@ -23,20 +23,13 @@ export default {
       ],
     },
     {
-      name: "",
+      name: "설비",
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
-      ],
-    },
-    {
-      name: "legal",
-      items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-        { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
+        { name: "시험측정기 및 설비", href: "https://www.creative-tim.com/contact-us" },
+        { name: "공정 흐름도", href: "https://www.creative-tim.com/knowledge-center" },
+        { name: "주요 생산품", href: "https://services.creative-tim.com/" },
+        { name: "고객사 및 적용차종", href: "https://www.creative-tim.com/sponsorships" },
+        { name: "인증현황", href: "https://www.creative-tim.com/sponsorships" },
       ],
     },
   ],

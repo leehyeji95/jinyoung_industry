@@ -35,7 +35,7 @@ function DefaultFooter({ content }) {
     <MKBox component="footer">
       <Container>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={5} sx={{ ml: "auto", mb: 3 }}>
+          <Grid item xs={12} md={8} sx={{ ml: "auto", mb: 3 }}>
             <MKBox>
               <Link to={brand.route}>
                 <MKBox component="img" src={brand.image} alt={brand.name} maxWidth="2rem" mb={2} />
