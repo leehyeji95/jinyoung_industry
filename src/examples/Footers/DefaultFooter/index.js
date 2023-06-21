@@ -44,12 +44,12 @@ function DefaultFooter({ content }) {
             </MKBox>
             <MKBox>
               <MKTypography sx={{fontSize: "0.75rem"}}>
-                <Icon sx={{ fontWeight: "bold"}}>phone</Icon>   031-111-2222
+                <Icon sx={{ fontWeight: "bold"}}>phone</Icon>   031-323-2151,2152
               </MKTypography>
               <MKTypography sx={{fontSize: "0.75rem"}}>
-                <Icon sx={{ fontWeight: "bold" }}>fax</Icon>    031-111-2222
+                <Icon sx={{ fontWeight: "bold" }}>fax</Icon>    031-323-2153
               </MKTypography>
-              <MKTypography sx={{fontSize: "0.75rem"}}> 경기도 용인시 처인구 백암면 고안리 494-5호</MKTypography>
+              <MKTypography sx={{fontSize: "0.75rem"}}> 경기도 용인시 처인구 백암면 고안로 53</MKTypography>
             </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (

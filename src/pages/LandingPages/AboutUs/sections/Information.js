@@ -26,6 +26,7 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 // Images
 import groups from "assets/images/groups.jpg";
 import MKTypography from "../../../../components/MKTypography";
+import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 function Information() {
   return (
@@ -63,6 +64,15 @@ function Information() {
               조직도
             </MKTypography>
             <MKBox component="img" src={groups} alt="groups" width="90%"/>
+          </Grid>
+          <Grid item xs={12} lg={12} flexDirection="column" sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}>
+            <MKTypography variant="h2" color="gray" fontWeight="bold">
+              오시는 길
+            </MKTypography>
+            <Map center={{lat:37.13278733758951, lng:127.40413767729119}} style={{width: "100%", height: "360px"}}>
+              <MapMarker position={{ lat: 37.13278733758951, lng: 127.40413767729119}}></MapMarker>
+            </Map>
+            <MKTypography sx={{fontSize: "0.75rem"}}> 경기도 용인시 처인구 백암면 고안로 53</MKTypography>
           </Grid>
         </Grid>
       </Container>
