@@ -41,7 +41,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-main.jpg";
+import bgImage from "assets/images/bg-main.png";
 
 function Presentation() {
   return (
