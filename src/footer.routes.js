@@ -2,14 +2,14 @@
 import MKTypography from "components/MKTypography";
 
 // Images (진영공업 로고)
-import logoCT from "assets/images/icon-jy.png";
+import logoCT from "assets/images/icon-jy2.png";
 
 const date = new Date().getFullYear();
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   brand: {
-    name: "진영공업",
+    // name: "진영공업",
     image: logoCT,
     route: "/",
   },

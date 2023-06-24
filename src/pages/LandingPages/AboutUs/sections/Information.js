@@ -24,7 +24,7 @@ import MKBox from "components/MKBox";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import groups from "assets/images/groups.jpg";
+import groups from "assets/images/groups.png";
 import MKTypography from "../../../../components/MKTypography";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
