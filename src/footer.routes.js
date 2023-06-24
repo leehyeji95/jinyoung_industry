@@ -9,7 +9,7 @@ const date = new Date().getFullYear();
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   brand: {
-    // name: "진영공업",
+    name: "진영공업",
     image: logoCT,
     route: "/",
   },
