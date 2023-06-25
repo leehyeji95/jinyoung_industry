@@ -24,74 +24,75 @@ import MKBox from "components/MKBox";
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+import DefaultInfoImgCard from "examples/Cards/InfoCards/DefaultInfoImgCard";
 
 // Images
 import bgFront from "assets/images/rotating-card-bg-front.jpeg";
 import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import cert1 from "assets/images/cert1.png";
+import cert2 from "assets/images/cert2.png";
+import cert3 from "assets/images/cert3.png";
+import MKTypography from "../../../components/MKTypography";
 
 function Information() {
   return (
     <MKBox component="section" py={6} my={6}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    사업영역
-                    <br />
-                    <br />
-                  </>
-                }
-                description="자동차 SEAT 조립용 플라스틱 사출품"
-              />
-              <RotatingCardBack
-                image={bgBack}
-                title="경영방침"
-                description="품질보장, 주인의식, 자주적인 능력, 등 내용 쓰기"
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "주요 생산품",
-                }}
-              />
-            </RotatingCard>
-          </Grid>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+        <MKTypography variant="h3" mb={6}>
+          인증 현황
+        </MKTypography>
+        <Grid container item xs={11} spacing={2} alignItems="center" sx={{ mx: "auto" }}>
+          <Grid item xs={12} lg={12} sx={{ mx: "auto" }}>
+          {/*  <RotatingCard>*/}
+          {/*    <RotatingCardFront*/}
+          {/*      image={bgFront}*/}
+          {/*      icon="touch_app"*/}
+          {/*      title={"인증현황"}*/}
+          {/*      description="대원산업, 엠시트"*/}
+          {/*    />*/}
+          {/*    <RotatingCardBack*/}
+          {/*      image={bgBack}*/}
+          {/*      title="적용차종"*/}
+          {/*      description="카니발, 니로, 프라이드, 모닝, 레이 그랜져, 소나타, 모하비"*/}
+          {/*      action={{*/}
+          {/*        type: "internal",*/}
+          {/*        route: "/sections/page-sections/page-headers",*/}
+          {/*        label: "주요 생산품",*/}
+          {/*      }}*/}
+          {/*    />*/}
+          {/*  </RotatingCard>*/}
+          {/*</Grid>*/}
+          {/*<Grid item xs={12} lg={8} sx={{ ml: "auto" }}>*/}
+            <Grid container spacing={5}>
+              <Grid item xs={12} md={4}>
+                <DefaultInfoImgCard
+                  certification={cert1}
+                  title="SQ 인증서"
+                  date={"2003년 09월 01일"}
+                  cert={"주관장사 대원산업주식회사"}
+                  valid={"2023년 4월 30일"}
+                  // description="인증획득일: 2003년 09월 01일<br>
+                  // 인증기관 : 주관장사 대원산업주식회사
+                  // 인증유효일 2023년 4월 30일"
                 />
               </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+              <Grid item xs={12} md={4}>
+                <DefaultInfoImgCard
+                  certification={cert2}
+                  title="IAFTF16949:2016"
+                  description="인증획득일 : 2018년 08월 16일
+                  인증기관 : KMR
+                  인증유효일 : 2024년 07월 01일"
                 />
               </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+              <Grid item xs={12} md={4}>
+                <DefaultInfoImgCard
+                    certification={cert3}
+                    title="ISO14001:2004"
+                    description="
+                    인증획득일 : 2010년 03월 15일
+                    인증기관 : KMR
+                    인증유효일 : 2025년 03월 14일"
                 />
               </Grid>
             </Grid>

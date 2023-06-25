@@ -2,7 +2,7 @@
 import MKTypography from "components/MKTypography";
 
 // Images (진영공업 로고)
-import logoCT from "assets/images/icon-jy2.png";
+import logoCT from "assets/images/icon-jy-bg.png";
 
 const date = new Date().getFullYear();
 

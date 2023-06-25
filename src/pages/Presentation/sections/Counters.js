@@ -31,7 +31,7 @@ function Counters() {
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={340}
+              count={350}
               suffix="+"
               title="최근 3년 평균 매출액"
               description="(억 단위)"
@@ -43,7 +43,7 @@ function Counters() {
               count={6}
               suffix="+"
               title="고객사"
-              description="Mix the sections, change the colors and unleash your creativity"
+              description="대원산업(평택/안산/서산), 대성금형, 현대엠시트 등"
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
