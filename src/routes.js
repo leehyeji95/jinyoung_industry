@@ -3,13 +3,13 @@ import Icon from "@mui/material/Icon";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
-import Location from "layouts/pages/landing-pages/location";
+import Facility from "layouts/pages/landing-pages/facilities";
 
 const routes = [
   {
     name: "home",
     icon: <Icon>home</Icon>,
-    href: "/#",
+    href: "/",
   },
   {
     name: "회사 소개",
@@ -48,28 +48,33 @@ const routes = [
     collapse: [
       {
         name: "시험 측정기 및 설비",
-        description: "",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
-      },
-      {
-        name: "공정 흐름도",
-        description: "",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
       },
       {
         name: "주요 생산품",
-        description: "",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
+      },
+      {
+        name: "공정 흐름도",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
       },
       {
         name: "고객사 및 적용차종",
-        description: "",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
       },
       {
         name: "인증현황",
-        description: "",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
+      },
+      {
+        name: "매출현황",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
       },
     ],
   },

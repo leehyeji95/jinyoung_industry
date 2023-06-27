@@ -119,7 +119,6 @@ function Contact() {
                                 </MKBox>
                             </Grid>
                             <Grid item xs={12} lg={8}>
-                                {/*<MKBox component="form" p={2} method="post">*/}
                                 <MKBox pt={0.5} pb={2} px={2}>
                                     <Grid item xs={12} lg={12}>
                                         <Map center={{lat: 37.13278733758951, lng: 127.40413767729119}}

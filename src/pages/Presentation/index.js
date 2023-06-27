@@ -29,20 +29,15 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Posts from "pages/LandingPages/Author/sections/Posts";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-// import bgImage from "assets/images/bg-main.png";
 import bgImage from "assets/images/bg-ball.png";
 
 function Presentation() {
@@ -101,7 +96,6 @@ function Presentation() {
                 }}
             >
                 <Counters/>
-                {/*<Posts/>*/}
                 <br/>
                 <DesignBlocks />
             </Card>

@@ -19,18 +19,14 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
-import Profile from "pages/LandingPages/Author/sections/Profile";
-import Contact from "pages/LandingPages/Author/sections/Contact";
+import Contact from "pages/LandingPages/AboutUs/sections/Contact";
 
 // Images
 import groups from "assets/images/groups.png";
-import MKTypography from "../../../../components/MKTypography";
-import { Map, MapMarker } from "react-kakao-maps-sdk";
-import bgImage from "../../../../assets/images/examples/blog2.jpg";
 
 function Information() {
   return (

@@ -14,8 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
-import Location from "pages/LandingPages/Location";
+import Facility from "pages/LandingPages/Facilities";
 
-export default function LocationPage() {
-  return <Location />;
+export default function FacilityPage() {
+  return <Facility />;
 }

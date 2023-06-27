@@ -28,8 +28,7 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Location from "pages/LandingPages/AboutUs/sections/Location";
-import DesignBlocks from "pages/LandingPages/AboutUs/sections/DesignBlocks";
+import Profile from "pages/LandingPages/AboutUs/sections/Profile";
 
 // Routes
 import routes from "routes";
@@ -37,16 +36,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
-import Profile from "../Author/sections/Profile";
 
-/*
-    회사소개 페이지
-    1. 기업 개요
-    2. 기업 연혁
-    3. 기업이념 및 경영방침
-    4. 조직구성
-    5. 오시는 길
- */
 function AboutUs() {
     return (
         <>

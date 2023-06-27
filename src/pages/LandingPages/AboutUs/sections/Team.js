@@ -22,17 +22,9 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
-import groups from "../../../../assets/images/groups.png";
 import {Map, MapMarker} from "react-kakao-maps-sdk";
 
-// Images
-// import team1 from "assets/images/team-5.jpg";
-// import team2 from "assets/images/bruce-mars.jpg";
-// import team3 from "assets/images/ivana-squares.jpg";
-// import team4 from "assets/images/ivana-square.jpg";
-
-function Team() {
+function Location() {
   return (
     <MKBox
       component="section"
@@ -59,50 +51,10 @@ function Team() {
             <MapMarker position={{ lat: 37.13278733758951, lng: 127.40413767729119}}></MapMarker>
           </Map>
           <MKTypography sx={{fontSize: "1rem"}} color={"white"}> 경기도 용인시 처인구 백암면 고안로 53</MKTypography>
-        {/*  <Grid item xs={12} lg={6}>*/}
-        {/*    <MKBox mb={1}>*/}
-        {/*      <HorizontalTeamCard*/}
-        {/*        image={team1}*/}
-        {/*        name="Emma Roberts"*/}
-        {/*        position={{ color: "info", label: "UI Designer" }}*/}
-        {/*        description="Artist is a term applied to a person who engages in an activity deemed to be an art."*/}
-        {/*      />*/}
-        {/*    </MKBox>*/}
-        {/*  </Grid>*/}
-        {/*  <Grid item xs={12} lg={6}>*/}
-        {/*    <MKBox mb={1}>*/}
-        {/*      <HorizontalTeamCard*/}
-        {/*        image={team2}*/}
-        {/*        name="William Pearce"*/}
-        {/*        position={{ color: "info", label: "Boss" }}*/}
-        {/*        description="Artist is a term applied to a person who engages in an activity deemed to be an art."*/}
-        {/*      />*/}
-        {/*    </MKBox>*/}
-        {/*  </Grid>*/}
-        {/*  <Grid item xs={12} lg={6}>*/}
-        {/*    <MKBox mb={{ xs: 1, lg: 0 }}>*/}
-        {/*      <HorizontalTeamCard*/}
-        {/*        image={team3}*/}
-        {/*        name="Ivana Flow"*/}
-        {/*        position={{ color: "info", label: "Athlete" }}*/}
-        {/*        description="Artist is a term applied to a person who engages in an activity deemed to be an art."*/}
-        {/*      />*/}
-        {/*    </MKBox>*/}
-        {/*  </Grid>*/}
-        {/*  <Grid item xs={12} lg={6}>*/}
-        {/*    <MKBox mb={{ xs: 1, lg: 0 }}>*/}
-        {/*      <HorizontalTeamCard*/}
-        {/*        image={team4}*/}
-        {/*        name="Marquez Garcia"*/}
-        {/*        position={{ color: "info", label: "JS Developer" }}*/}
-        {/*        description="Artist is a term applied to a person who engages in an activity deemed to be an art."*/}
-        {/*      />*/}
-        {/*    </MKBox>*/}
-        {/*  </Grid>*/}
         </Grid>
       </Container>
     </MKBox>
   );
 }
 
-export default Team;
+export default Location;
