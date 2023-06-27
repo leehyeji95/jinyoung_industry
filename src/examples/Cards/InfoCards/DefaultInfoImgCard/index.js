@@ -31,7 +31,8 @@ import Card from "@mui/material/Card";
 function DefaultInfoCard({ color, certification, title, name, date, cert, valid, direction, small }) {
   return (
       <Card>
-          <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
+          <MKBox position="relative" borderRadius="lg" mx={0} mt={3} display="flex"
+                 style={{flexDirection: "row", flexWrap: "wrap", alignContent: "stretch", justifyContent:"space-evenly"}}>
               <MKBox
                   component="img"
                   src={certification}
@@ -39,12 +40,11 @@ function DefaultInfoCard({ color, certification, title, name, date, cert, valid,
                   borderRadius="lg"
                   width="80%"
                   position="relative"
-                  zIndex={1}
               />
               <MKBox
                   borderRadius="lg"
                   shadow="md"
-                  width="80%"
+                  width="100%"
                   height="80%"
                   position="center"
                   left={0}
@@ -57,11 +57,11 @@ function DefaultInfoCard({ color, certification, title, name, date, cert, valid,
                   }}
               />
           </MKBox>
-          <MKBox p={3} mt={-1} textAlign="center">
+          <MKBox p={3} mt={-3} textAlign="center">
               <MKTypography display="inline" variant="h5" textTransform="capitalize" fontWeight="regular">
                   {title}
               </MKTypography>
-              <MKBox mt={1} mb={3} textAlign="left">
+              <MKBox mt={2} mb={2} textAlign="left">
                   <MKTypography variant="body2" component="p" color="text">
                       인증획득일 : {date} <br/>
                       인증 기관 : {cert} <br/>
@@ -70,29 +70,6 @@ function DefaultInfoCard({ color, certification, title, name, date, cert, valid,
               </MKBox>
           </MKBox>
       </Card>
-    // <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
-    //     <MKBox component="img" src={certification} alt="certification" width="90%" opacity={0.7} mb={3}/>
-    //   <MKTypography
-    //     display="block"
-    //     variant="5"
-    //     fontWeight="bold"
-    //     mb={1.5}
-    //   >
-    //     {title}
-    //   </MKTypography>
-    //   <MKTypography
-    //     display="block"
-    //     variant={small ? "button" : "body2"}
-    //     color="text"
-    //     pr={direction === "left" ? 6 : 0}
-    //     pl={direction === "right" ? 6 : 0}
-    //     mb={3}
-    //   >
-    //       인증획득일 : {date} <br/>
-    //       인증 기관 : {cert} <br/>
-    //       인증유효일 : {valid}
-    //   </MKTypography>
-    // </MKBox>
   );
 }
 

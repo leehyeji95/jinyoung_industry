@@ -101,9 +101,9 @@ function Presentation() {
                 }}
             >
                 <Counters/>
-                <Posts/>
+                {/*<Posts/>*/}
                 <br/>
-                <Information/>
+                <DesignBlocks />
             </Card>
             <MKBox pt={6} px={1} mt={6}>
                 <DefaultFooter content={footerRoutes}/>
