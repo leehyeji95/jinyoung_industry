@@ -37,7 +37,7 @@ function Footer() {
             mb={{ xs: 3, lg: 0 }}
           >
             <MKTypography variant="h6" textTransform="uppercase" mb={{ xs: 2, lg: 3 }}>
-              Material Design
+              진영공업
             </MKTypography>
             <Stack
               component="ul"
@@ -55,8 +55,8 @@ function Footer() {
                   fontWeight="regular"
                   opacity={0.8}
                   component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
+                  href="/"
+                  target="_self"
                   rel="noreferrer"
                 >
                   Home
@@ -68,8 +68,8 @@ function Footer() {
                   fontWeight="regular"
                   opacity={0.8}
                   component={Link}
-                  href="https://www.creative-tim.com/presentation"
-                  target="_blank"
+                  href="/"
+                  target="_self"
                   rel="noreferrer"
                 >
                   About
@@ -81,24 +81,11 @@ function Footer() {
                   fontWeight="regular"
                   opacity={0.8}
                   component={Link}
-                  href="https://www.creative-tim.com/blog"
-                  target="_blank"
+                  href="/"
+                  target="_self"
                   rel="noreferrer"
                 >
-                  Blog
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
-                  variant="button"
-                  fontWeight="regular"
-                  opacity={0.8}
-                  component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Services
+                  Facility
                 </MKTypography>
               </MKBox>
             </Stack>
@@ -109,55 +96,7 @@ function Footer() {
           </Grid>
           <Grid item xs={12} lg={6} ml="auto" textAlign={{ xs: "center", lg: "right" }}>
             <MKTypography variant="body1" fontWeight="bold" mb={6} sx={{ fontSize: "1.125rem" }}>
-              The reward for getting on the stage is fame. The price of fame is you can&apos;t get
-              off the stage.
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#dribbble"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-dribbble" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#twitter"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-twitter" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#pinterest"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-pinterest" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#github"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-            >
-              <i className="fab fa-github" />
+              Footer 회사 내용
             </MKTypography>
           </Grid>
         </Grid>

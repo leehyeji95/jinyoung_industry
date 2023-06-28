@@ -23,28 +23,21 @@ import MKBox from "components/MKBox";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Facilities page sections
-import Profile from "pages/LandingPages/Facilities/sections/Profile";
-import Posts from "pages/LandingPages/Facilities/sections/Posts";
-import Contact from "pages/LandingPages/Facilities/sections/Contact";
 import Footer from "pages/LandingPages/Facilities/sections/Footer";
+import Information from "pages/LandingPages/Facilities/sections/Information";
 
 // Routes
 import routes from "routes";
 
 // Images
 import bgImage from "assets/images/city-profile.jpg";
+import MKTypography from "../../../components/MKTypography";
 
 function Facility() {
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
         transparent
         light
       />
@@ -75,10 +68,19 @@ function Facility() {
             boxShadow: ({ boxShadows: { xxl } }) => xxl,
           }}
         >
-          <Profile />
-          <Posts />
+          <MKTypography
+            variant="h1"
+            color="white"
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["3xl"]
+              }
+            })}
+          >
+            설비
+          </MKTypography>
+          <Information />
         </Card>
-        <Contact />
         <Footer />
       </MKBox>
     </>

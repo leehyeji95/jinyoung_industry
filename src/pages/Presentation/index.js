@@ -30,15 +30,15 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-
-// Presentation page components
+import Posts from "pages/Presentation/sections/Posts";
 
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-ball.png";
+// import bgImage from "assets/images/bg-ball.png";
+import bgImage from "assets/images/bg-sample.png";
 
 function Presentation() {
     return (
@@ -62,8 +62,8 @@ function Presentation() {
                     <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
                         <MKTypography
                             variant="h1"
-                            color="white"
-                            mt={-20}
+                            color="black"
+                            mt={-6}
                             mb={1}
                             sx={({breakpoints, typography: {size}}) => ({
                                 [breakpoints.down("md")]: {
@@ -73,11 +73,12 @@ function Presentation() {
                         > 진영공업 (주)
                         </MKTypography>
                         <MKTypography
+                            variant="body7"
                             sx={{fontSize: "1rem"}}
-                            color="white"
+                            color="black"
                             textAlign="center"
                             px={{xs: 6, lg: 12}}
-                            mt={-10}
+                            mt={-1}
                         >
                             진영공업은 지난 2002년 9월 출범 이후 '인격도약', '기업번영', '국가초석'을 사훈으로 삼아 고품질의 자동차 SEAT 조립용 플라스틱 사출품 생산을 궁극적인 목표로 삼고 있습니다.
                         </MKTypography>
@@ -97,6 +98,7 @@ function Presentation() {
             >
                 <Counters/>
                 <br/>
+                <Posts />
                 <DesignBlocks />
             </Card>
             <MKBox pt={6} px={1} mt={6}>
