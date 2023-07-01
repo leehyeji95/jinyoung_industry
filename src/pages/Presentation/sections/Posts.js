@@ -23,13 +23,15 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React components
 import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
-import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
+import RotatingCard from "examples/Cards/RotatingCard";
+import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
+import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 
 // Images
 import post1 from "assets/images/machine_main1.png";
-import post2 from "assets/images/car_main.jpg";
-import post3 from "assets/images/image21.png";
-import post4 from "assets/images/bg-sample2.png";
+import post2 from "assets/images/product_main.png";
+import post3 from "assets/images/car_main.png";
+import post4 from "assets/images/customer.png";
 
 function Posts() {
   return (
@@ -50,7 +52,7 @@ function Posts() {
                 type: "internal",
                 route: "/pages/blogs/author",
                 color: "info",
-                label: "read more",
+                label: "더 알아보기",
               }}
             />
           </Grid>
@@ -58,12 +60,12 @@ function Posts() {
             <TransparentBlogCard
               image={post2}
               title="주요 생산품"
-              description="대원산업, 엠시트 등 주 고객사와 카니발, 니로, 프라이드, 모닝, 소나타 등 적용 차종 목록"
+              description="대원산업 SG2 차종, 엠시트 GN7 차종에 들어간 SHIELD COVER PWR 등 생산품 목록"
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
                 color: "info",
-                label: "read more",
+                label: "더 알아보기",
               }}
             />
           </Grid>
@@ -71,26 +73,33 @@ function Posts() {
             <TransparentBlogCard
               image={post3}
               title="적용차종"
-              description="대원산업 SG2 차종, 엠시트 GN7 차종에 적용된 SHELD COVER PWR, FRT BACK BOARD 등 생산품 목록"
+              description="그랜져, 프라이드, 니로 등 진영공업 제품이 적용된 차종 목록"
+
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
                 color: "info",
-                label: "read more",
+                label: "더 알아보기",
               }}
             />
           </Grid>
           <Grid item xs={12} sm={6} lg={3}>
-            <BackgroundBlogCard
-              image={post4}
-              title="주 고객사"
-              description="주고객사 위치 더 알아보기"
-              action={{
-                type: "internal",
-                route: "/pages/blogs/author",
-                label: "read more",
-              }}
-            />
+              <RotatingCard>
+                  <RotatingCardFront
+                      image={post4}
+                      icon="touch_app"
+                      title={
+                          <>
+                          </>
+                      }
+                      description=""
+                  />
+                  <RotatingCardBack
+                      image={post4}
+                      title="주 고객사"
+                      description="대성금형, 대원산업(안산, 평택 공장) 및 현대 엠시트"
+                  />
+              </RotatingCard>
           </Grid>
         </Grid>
       </Container>

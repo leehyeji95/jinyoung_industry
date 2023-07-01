@@ -44,8 +44,7 @@ function RotatingCard({ color, image, title, description, action }) {
       sx={{
         backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
           `${linearGradient(
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
+              rgba(gradients.dark.main, 0.1), rgba(gradients.dark.state, 0.1)
           )}, url(${image})`,
         backgroundSize: "cover",
         backfaceVisibility: "hidden",
@@ -53,33 +52,13 @@ function RotatingCard({ color, image, title, description, action }) {
       }}
     >
       <MKBox pt={12} pb={2} px={2} textAlign="center" lineHeight={1}>
-        <MKTypography variant="h3" color="white" gutterBottom>
+        <MKTypography variant="h3" color="red" gutterBottom mt={13}>
           {title}
         </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        <MKTypography variant="body2" color="black" opacity={1}>
           {description}
         </MKTypography>
-        {action && (
-          <MKBox width="50%" mt={4} mb={2} mx="auto">
-            {action.type === "external" ? (
-              <MKButton
-                component={MuiLink}
-                href={action.route}
-                target="_self"
-                rel="noreferrer"
-                color="white"
-                size="small"
-                fullWidth
-              >
-                {action.label}
-              </MKButton>
-            ) : (
-              <MKButton component={Link} to={action.route} color="white" size="small" fullWidth>
-                {action.label}
-              </MKButton>
-            )}
-          </MKBox>
-        )}
+
       </MKBox>
     </MKBox>
   );

@@ -68,17 +68,6 @@ function Facility() {
             boxShadow: ({ boxShadows: { xxl } }) => xxl,
           }}
         >
-          <MKTypography
-            variant="h1"
-            color="white"
-            sx={({ breakpoints, typography: { size } }) => ({
-              [breakpoints.down("md")]: {
-                fontSize: size["3xl"]
-              }
-            })}
-          >
-            설비
-          </MKTypography>
           <Information />
         </Card>
         <Footer />

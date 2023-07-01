@@ -77,9 +77,9 @@ function DesignBlocks() {
           {/*  container*/}
           {/*  sx={{ mb: 2 }}*/}
           {/*/>*/}
-          <MKTypography variant="h2" fontWeight="bold">
-            주요 현황
-          </MKTypography>
+          {/*<MKTypography variant="h2" fontWeight="bold">*/}
+          {/*  주요 현황*/}
+          {/*</MKTypography>*/}
           {/*<MKTypography variant="body1" color="text">*/}
           {/*  시험측정기 보유현황, 설비현황, 매출현황, 인증 현황 등 진영공업(주)의 현황 정보를 제시합니다.*/}
           {/*</MKTypography>*/}

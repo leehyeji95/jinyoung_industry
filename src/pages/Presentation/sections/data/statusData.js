@@ -12,70 +12,31 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+// Images
 import cert1 from "assets/images/cert1.png";
 import cert2 from "assets/images/cert2.png";
 import cert3 from "assets/images/cert3.png";
 
-import post1 from "assets/images/machine_main1.png";
-import post2 from "assets/images/car_main.jpg";
-import post3 from "assets/images/image21.png";
-import post4 from "assets/images/flowchart.png";
-
 import sales from "assets/images/saleschart.png";
+
 export default [
-  // {
-  //   title: "주요 현황",
-  //   description: "",
-  //   items: [
-  //     {
-  //       image: post1,
-  //       name: "시험측정기 보유현황",
-  //       count: 4,
-  //       route: "/sections/navigation/navbars",
-  //     },
-  //     {
-  //       image: post1,
-  //       name: "설비현황",
-  //       count: 4,
-  //       route: "/sections/navigation/navbars",
-  //     },
-  //     {
-  //       image: post2,
-  //       name: "적용차종",
-  //       count: 2,
-  //       route: "/sections/navigation/nav-tabs",
-  //     },
-  //     {
-  //       image: post3,
-  //       name: "주요 고객사",
-  //       count: 3,
-  //       route: "/sections/navigation/pagination",
-  //     },
-  //     {
-  //       image: post3,
-  //       name: "매출현황",
-  //       count: 3,
-  //       route: "/sections/navigation/pagination",
-  //     },
-  //   ],
-  // },
   {
     title: "인증현황",
     description: "",
     items: [
       {
         image: cert1,
-        name: "SQ 인증서",
+        name: "",
         route: "/sections/page-sections/page-headers",
       },
       {
         image: cert2,
-        name: "IAFTF16949:2016",
+        name: "",
         route: "/sections/page-sections/features",
       },
       {
         image: cert3,
-        name: "ISO14001:2004",
+        name: "",
         route: "/sections/page-sections/features",
       },
     ],

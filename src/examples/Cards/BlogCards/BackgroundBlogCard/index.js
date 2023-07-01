@@ -70,35 +70,35 @@ function BackgroundBlogCard({ image, title, description, action }) {
           <MKTypography variant="body2" color="white" my={3}>
             {description}
           </MKTypography>
-          {action.type === "internal" ? (
-            <MKTypography
-              component={Link}
-              to={action.route}
-              variant="body2"
-              fontWeight="regular"
-              color="white"
-              textTransform="capitalize"
-              sx={cardActionStyles}
-            >
-              {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
-          ) : (
-            <MKTypography
-              component={MuiLink}
-              href={action.route}
-              target="_self"
-              rel="noreferrer"
-              variant="body2"
-              fontWeight="regular"
-              color="white"
-              textTransform="capitalize"
-              sx={cardActionStyles}
-            >
-              {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
-          )}
+          {/*{action.type === "internal" ? (*/}
+          {/*  <MKTypography*/}
+          {/*    component={Link}*/}
+          {/*    to={action.route}*/}
+          {/*    variant="body2"*/}
+          {/*    fontWeight="regular"*/}
+          {/*    color="white"*/}
+          {/*    textTransform="capitalize"*/}
+          {/*    sx={cardActionStyles}*/}
+          {/*  >*/}
+          {/*    {action.label}*/}
+          {/*    <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>*/}
+          {/*  </MKTypography>*/}
+          {/*) : (*/}
+          {/*  <MKTypography*/}
+          {/*    component={MuiLink}*/}
+          {/*    href={action.route}*/}
+          {/*    target="_self"*/}
+          {/*    rel="noreferrer"*/}
+          {/*    variant="body2"*/}
+          {/*    fontWeight="regular"*/}
+          {/*    color="white"*/}
+          {/*    textTransform="capitalize"*/}
+          {/*    sx={cardActionStyles}*/}
+          {/*  >*/}
+          {/*    {action.label}*/}
+          {/*    <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>*/}
+          {/*  </MKTypography>*/}
+          {/*)}*/}
         </MKBox>
       </MKBox>
     </Card>
