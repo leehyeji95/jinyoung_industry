@@ -36,7 +36,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-sample2.png";
+import bgImage from "assets/images/about_bg.png";
 
 function AboutUs() {
   return (
@@ -95,13 +95,13 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >
-        <Profile />
-        <Information />
+        <Profile id="years"/>
+        <Information id="rules"/>
       </Card>
-      <Footer />
-      {/*<MKBox pt={6} px={1} mt={6}>*/}
-      {/*    <DefaultFooter content={footerRoutes}/>*/}
-      {/*</MKBox>*/}
+      {/*<Footer />*/}
+      <MKBox pt={6} px={1} mt={6}>
+          <DefaultFooter content={footerRoutes}/>
+      </MKBox>
     </>
   );
 }

@@ -27,17 +27,17 @@ export default [
       {
         image: cert1,
         name: "",
-        route: "/sections/page-sections/page-headers",
+        route: "/pages/landing-pages/facilities",
       },
       {
         image: cert2,
         name: "",
-        route: "/sections/page-sections/features",
+        route: "/pages/landing-pages/facilities",
       },
       {
         image: cert3,
         name: "",
-        route: "/sections/page-sections/features",
+        route: "/pages/landing-pages/facilities",
       },
     ],
   },
@@ -48,7 +48,7 @@ export default [
       {
         image: sales,
         name: "매출현황",
-        route: "/sections/page-sections/page-headers",
+        route: "/pages/landing-pages/facilities",
       },
     ],
   },

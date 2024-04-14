@@ -58,7 +58,7 @@ function Information() {
                         <Grid item xs={12} sm={6} lg={6}>
                             <TransparentModalCard
                                 image={product1}
-                                title="대원산업 SG 차종"
+                                title="대원산업 SV 차종"
                                 type="1"
                             />
                         </Grid>

@@ -14,21 +14,21 @@
  */
 
 // react-router components
+import * as React from "react";
 import {Link} from "react-router-dom";
+
 import {useState} from "react";
-
 // prop-types is a library for typechecking of props
+
 import PropTypes from "prop-types";
-
 // @mui material components
-import Card from "@mui/material/Card";
 
+import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import * as React from "react";
 import {animated, useSpring} from "@react-spring/web";
 
 import product1_1 from "assets/images/product1-1.png";

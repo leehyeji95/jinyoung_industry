@@ -25,13 +25,13 @@ const routes = [
         route: "/pages/landing-pages/about-us",
         component: <AboutUs />
       },
+      // {
+      //   name: "회사 연혁",
+      //   route: "/pages/landing-pages/about-us",
+      //   component: <AboutUs />
+      // },
       {
-        name: "회사 연혁",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />
-      },
-      {
-        name: "조직 구성",
+        name: "조직도",
         route: "/pages/landing-pages/about-us",
         component: <AboutUs />
       },
@@ -43,7 +43,7 @@ const routes = [
     ],
   },
   {
-    name: "설비",
+    name: "설비현황",
     icon: <Icon>article</Icon>,
     collapse: [
       {

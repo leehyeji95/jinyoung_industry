@@ -22,12 +22,16 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Images
-import bgImage from "assets/images/examples/blog2.jpg";
+// import bgImage from "";
 import {Map, MapMarker} from "react-kakao-maps-sdk";
 
 function Contact() {
     return (
         <MKBox component="section" py={{xs: 0, lg: 6}}>
+            <MKTypography variant="h2" color="gray" fontWeight="bold">
+                오시는 길
+            </MKTypography>
+            <br/>
             <Container>
                 <Grid container item>
                     <MKBox
@@ -53,7 +57,7 @@ function Contact() {
                                         `${linearGradient(
                                             rgba(gradients.dark.main, 0.8),
                                             rgba(gradients.dark.state, 0.8)
-                                        )}, url(${bgImage})`,
+                                        )}`,
                                     backgroundSize: "cover",
                                 }}
                             >
