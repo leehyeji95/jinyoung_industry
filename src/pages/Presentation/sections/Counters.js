@@ -43,7 +43,7 @@ function Counters() {
               count={6}
               suffix="+"
               title="고객사"
-              description="대원산업(평택/안산/서산), 대성금형, 현대엠시트 등"
+              description="대원산업(평택/안산/서산), 현대 엠시트 등"
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
@@ -51,7 +51,7 @@ function Counters() {
             <DefaultCounterCard
               count={8}
               title="적용 차종"
-              description="카니발, 니로, 프라이드, 모닝, 레이, 그랜져, 소나타, 모하비"
+              description="카니발, 니로, 프라이드, 모닝, 레이, 그랜져, &nbsp;&nbsp;&nbsp;  소나타, 모하비"
             />
           </Grid>
         </Grid>

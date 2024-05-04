@@ -31,7 +31,7 @@ import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import post1 from "assets/images/machine_main1.png";
 import post2 from "assets/images/product_main.png";
 import post3 from "assets/images/car_main.png";
-import post4 from "assets/images/customer.png";
+import post4 from "assets/images/map.png";
 
 function Posts() {
   return (
@@ -95,10 +95,8 @@ function Posts() {
                       description=""
                   />
                   <RotatingCardBack
-                      // image={}
                       title="주 고객사"
-                      description="대성금형,
-                      대원산업(안산, 평택 공장),
+                      description="대원산업(안산, 평택 공장),
                       현대 엠시트"
                   />
               </RotatingCard>

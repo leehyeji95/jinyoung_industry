@@ -28,8 +28,8 @@ function HorizontalTeamCard({ image, name, position, description }) {
   return (
     <Card sx={{ mt: 3 }}>
       <Grid container>
-        <Grid item xs={12} md={6} lg={4} sx={{ mt: -6 }}>
-          <MKBox width="100%" pt={2} pb={1} px={2}>
+        <Grid item xs={12} md={6} lg={12} sx={{ mt: -6 }}>
+          <MKBox width="100%" pt={2} pb={0} px={1}>
             <MKBox
               component="img"
               src={image}
@@ -40,15 +40,15 @@ function HorizontalTeamCard({ image, name, position, description }) {
             />
           </MKBox>
         </Grid>
-        <Grid item xs={12} md={6} lg={8} sx={{ my: "auto" }}>
-          <MKBox pt={{ xs: 1, lg: 2.5 }} pb={2.5} pr={4} pl={{ xs: 4, lg: 1 }} lineHeight={1}>
-            <MKTypography variant="h5">{name}</MKTypography>
-            <MKTypography variant="h6" color={position.color} mb={1}>
-              {position.label}
-            </MKTypography>
-            <MKTypography variant="body2" color="text">
-              {description}
-            </MKTypography>
+        <Grid item xs={12} md={6} lg={12} sx={{ my: "auto" }}>
+          <MKBox pt={{ xs: 10, lg: 2.5 }} pb={1} pr={4} pl={{ xs: 4, lg: 1 }} lineHeight={1}>
+            <MKTypography variant="h5" pb={1}>{name}</MKTypography>
+            {/*<MKTypography variant="h6" color={position.color} mb={1}>*/}
+            {/*  {position.label}*/}
+            {/*</MKTypography>*/}
+            {/*<MKTypography variant="body2" color="text">*/}
+            {/*  {description}*/}
+            {/*</MKTypography>*/}
           </MKBox>
         </Grid>
       </Grid>

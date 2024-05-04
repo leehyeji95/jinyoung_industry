@@ -16,6 +16,7 @@ Coded by www.creative-tim.com
 import cert1 from "assets/images/cert1.png";
 import cert2 from "assets/images/cert2.png";
 import cert3 from "assets/images/cert3.png";
+import cert4 from "assets/images/cert4.png";
 
 import sales from "assets/images/saleschart.png";
 
@@ -39,17 +40,22 @@ export default [
         name: "",
         route: "/pages/landing-pages/facilities",
       },
-    ],
-  },
-  {
-    title: "매출현황",
-    description: "",
-    items: [
       {
-        image: sales,
-        name: "매출현황",
+        image: cert4,
+        name: "",
         route: "/pages/landing-pages/facilities",
       },
     ],
   },
+  // {
+  //   title: "매출현황",
+  //   description: "",
+  //   items: [
+  //     {
+  //       image: sales,
+  //       name: "매출현황",
+  //       route: "/pages/landing-pages/facilities",
+  //     },
+  //   ],
+  // },
 ];

@@ -22,39 +22,89 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import {Map, MapMarker} from "react-kakao-maps-sdk";
+import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
-function Location() {
+// Images
+import facility1 from "assets/images/facility1.png";
+import facility2 from "assets/images/facility2.png";
+import facility3 from "assets/images/facility3.png";
+import facility4 from "assets/images/facility4.png";
+import facility5 from "assets/images/facility5.png";
+
+function Team() {
   return (
-    <MKBox
-      component="section"
-      variant="gradient"
-      bgColor="dark"
-      position="relative"
-      py={6}
-      px={{ xs: 2, lg: 0 }}
-      mx={-2}
-    >
-      <Container>
-        <Grid container>
-          <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
-              오시는 길
-            </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
-
-            </MKTypography>
+      <MKBox
+          component="section"
+          variant="gradient"
+          bgColor="light"
+          position="relative"
+          py={6}
+          px={{ xs: 2, lg: 0 }}
+          mx={-2}
+      >
+        <Container>
+          <Grid container>
+            <Grid item xs={12} md={8} sx={{ mb: 6 }}>
+              <MKTypography variant="h3" color="black">
+                설비 보유 현황
+              </MKTypography>
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid container spacing={3}>
-          <Map center={{lat:37.13278733758951, lng:127.40413767729119}} style={{width: "100%", height: "360px"}}>
-            <MapMarker position={{ lat: 37.13278733758951, lng: 127.40413767729119}}></MapMarker>
-          </Map>
-          <MKTypography sx={{fontSize: "1rem"}} color={"white"}> 경기도 용인시 처인구 백암면 고안로 53</MKTypography>
-        </Grid>
-      </Container>
-    </MKBox>
+          <Grid container spacing={3}>
+            <Grid item xs={12} lg={4}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                    image={facility1}
+                    name="사출기 1050T"
+                    // position={{ color: "info", label: "" }}
+                    // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                />
+              </MKBox>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                    image={facility2}
+                    name="사출기 680T"
+                    // position={{ color: "info", label: "" }}
+                    // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                />
+              </MKBox>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                    image={facility3}
+                    name="사출기 480T"
+                    // position={{ color: "info", label: "" }}
+                    // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                />
+              </MKBox>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                    image={facility4}
+                    name="사출기 280T"
+                    // position={{ color: "info", label: "" }}
+                    // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                />
+              </MKBox>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <MKBox mb={1}>
+                <HorizontalTeamCard
+                    image={facility5}
+                    name="취출로보트"
+                    // position={{ color: "info", label: "" }}
+                    // description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                />
+              </MKBox>
+            </Grid>
+          </Grid>
+        </Container>
+      </MKBox>
   );
 }
 
-export default Location;
+export default Team;

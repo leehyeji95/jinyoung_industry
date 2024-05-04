@@ -100,14 +100,14 @@ function TransparentModalCard({image, title, type}) {
                 src={image}
                 borderRadius="lg"
                 shadow="md"
-                width="80%"
+                width="100%"
                 position="relative"
                 zIndex={1}
             />
             <MKBox
                 borderRadius="lg"
                 shadow="md"
-                width="80%"
+                width="100%"
                 height="80%"
                 position="absolute"
                 left={0}
@@ -128,6 +128,7 @@ function TransparentModalCard({image, title, type}) {
                 background: "transparent",
                 boxShadow: "none",
                 overflow: "visible",
+                textAlign: "center",
             }}
         >
             <Link pt={2} pb={3} onClick={handleOpen}>

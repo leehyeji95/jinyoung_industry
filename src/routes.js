@@ -4,6 +4,7 @@ import Icon from "@mui/material/Icon";
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import Facility from "layouts/pages/landing-pages/facilities";
+import AutorenewIcon from '@mui/icons-material/Autorenew';
 
 const routes = [
   {
@@ -12,7 +13,7 @@ const routes = [
     href: "/",
   },
   {
-    name: "회사 소개",
+    name: "회사소개",
     icon: <Icon>dashboard</Icon>,
     collapse: [
       {
@@ -26,19 +27,45 @@ const routes = [
         component: <AboutUs />
       },
       // {
-      //   name: "회사 연혁",
+      //   name: "조직도",
       //   route: "/pages/landing-pages/about-us",
       //   component: <AboutUs />
       // },
       {
-        name: "조직도",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />
-      },
-      {
         name: "오시는 길",
         route: "/pages/landing-pages/about-us",
         component: <AboutUs />
+      },
+    ],
+  },
+  {
+    name: "ESG",
+    icon: <AutorenewIcon/>,
+    collapse: [
+      {
+        name: "SHE 방침",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
+      },
+      {
+        name: "안전보건경영",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
+      },
+      {
+        name: "환경경영",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
+      },
+      {
+        name: "윤리경영",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
+      },
+      {
+        name: "사이버신문고",
+        route: "/pages/landing-pages/facilities",
+        component: <Facility />
       },
     ],
   },
@@ -56,11 +83,11 @@ const routes = [
         route: "/pages/landing-pages/facilities",
         component: <Facility />
       },
-      {
-        name: "공정 흐름도",
-        route: "/pages/landing-pages/facilities",
-        component: <Facility />
-      },
+      // {
+      //   name: "공정 흐름도",
+      //   route: "/pages/landing-pages/facilities",
+      //   component: <Facility />
+      // },
       {
         name: "고객사 및 적용차종",
         route: "/pages/landing-pages/facilities",
@@ -71,11 +98,7 @@ const routes = [
         route: "/pages/landing-pages/facilities",
         component: <Facility />
       },
-      {
-        name: "매출현황",
-        route: "/pages/landing-pages/facilities",
-        component: <Facility />
-      },
+
     ],
   },
 ];

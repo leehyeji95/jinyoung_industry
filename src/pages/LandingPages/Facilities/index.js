@@ -29,9 +29,13 @@ import Information from "pages/LandingPages/Facilities/sections/Information";
 import routes from "routes";
 
 // Images
-import bgImage from "assets/images/city-profile.jpg";
+// import bgImage from "assets/images/city-profile.jpg";
+import bgImage from "assets/images/facility_bg.png";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import footerRoutes from "footer.routes";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import MKTypography from "../../../components/MKTypography";
 
 function Facility() {
     return (
@@ -55,7 +59,32 @@ function Facility() {
                     display: "grid",
                     placeItems: "center",
                 }}
-            />
+            >
+                <Container>
+                    <Grid
+                        container
+                        item
+                        xs={12}
+                        lg={8}
+                        justifyContent="center"
+                        alignItems="center"
+                        flexDirection="column"
+                        sx={{ mx: "auto", textAlign: "center" }}
+                    >
+                        <MKTypography
+                            variant="h1"
+                            color="white"
+                            sx={({ breakpoints, typography: { size } }) => ({
+                                [breakpoints.down("md")]: {
+                                    fontSize: size["3xl"]
+                                }
+                            })}
+                        >
+                            설비현황
+                        </MKTypography>
+                    </Grid>
+                </Container>
+            </MKBox>
             <Card
                 sx={{
                     p: 2,

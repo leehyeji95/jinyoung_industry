@@ -19,15 +19,25 @@ export default {
       items: [
         { name: "회사 연혁", href: "/pages/landing-pages/about-us" },
         { name: "기업 이념", href: "/pages/landing-pages/about-us" },
-        { name: "조직도", href: "/pages/landing-pages/about-us" },
+        // { name: "조직도", href: "/pages/landing-pages/about-us" },
         { name: "오시는 길", href: "/pages/landing-pages/about-us" },
+      ],
+    },
+    {
+      name: "ESG",
+      items: [
+        { name: "SHE 방침", href: "/pages/landing-pages/about-us" },
+        { name: "안전보건경영", href: "/pages/landing-pages/about-us" },
+        { name: "환경경영", href: "/pages/landing-pages/about-us" },
+        { name: "윤리경영", href: "/pages/landing-pages/about-us" },
+        { name: "사이버신문고", href: "/pages/landing-pages/about-us" },
       ],
     },
     {
       name: "설비현황",
       items: [
-        { name: "시험측정기 및 설비", href: "/pages/landing-pages/facilities" },
-        { name: "공정 흐름도", href: "/pages/landing-pages/facilities" },
+        { name: "설비현황", href: "/pages/landing-pages/facilities" },
+        // { name: "공정 흐름도", href: "/pages/landing-pages/facilities" },
         { name: "주요 생산품", href: "/pages/landing-pages/facilities" },
         { name: "고객사 및 적용차종", href: "/pages/landing-pages/facilities" },
         { name: "인증현황", href: "/pages/landing-pages/facilities" },

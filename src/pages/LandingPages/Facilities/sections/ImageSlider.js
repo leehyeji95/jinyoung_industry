@@ -43,14 +43,14 @@ function ImageSlider() {
     return (
         <MKBox >
             <MKTypography variant="h3" color="dark" fontWeight="bold" mb={3}>
-                시험측정기 및 설비 보유 현황
+                설비 보유 현황
             </MKTypography>
             <Slider {...settings} ref={slickRef}>
-                <MKBox component="img" src={f1_1} pl={3}/>
-                <MKBox component="img" src={f1_2} pl={3}/>
-                <MKBox component="img" src={f1_3} pl={3}/>
-                <MKBox component="img" src={f1_4} pl={3}/>
-                <MKBox component="img" src={f1_5} pl={3}/>
+                {/*<MKBox component="img" src={f1_1} pl={3}/>*/}
+                {/*<MKBox component="img" src={f1_2} pl={3}/>*/}
+                {/*<MKBox component="img" src={f1_3} pl={3}/>*/}
+                {/*<MKBox component="img" src={f1_4} pl={3}/>*/}
+                {/*<MKBox component="img" src={f1_5} pl={3}/>*/}
                 <MKBox component="img" src={f2_1} pl={3}/>
                 <MKBox component="img" src={f2_2} pl={3}/>
                 <MKBox component="img" src={f2_3} pl={3}/>

@@ -28,7 +28,7 @@ import {Map, MapMarker} from "react-kakao-maps-sdk";
 function Contact() {
     return (
         <MKBox component="section" py={{xs: 0, lg: 6}}>
-            <MKTypography variant="h2" color="gray" fontWeight="bold">
+            <MKTypography variant="h3" color="gray" fontWeight="bold">
                 오시는 길
             </MKTypography>
             <br/>
