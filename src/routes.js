@@ -4,6 +4,7 @@ import Icon from "@mui/material/Icon";
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import Facility from "layouts/pages/landing-pages/facilities";
+import ESG from "layouts/pages/landing-pages/esg";
 import AutorenewIcon from '@mui/icons-material/Autorenew';
 
 const routes = [
@@ -44,27 +45,27 @@ const routes = [
     collapse: [
       {
         name: "SHE 방침",
-        route: "/pages/landing-pages/facilities",
-        component: <Facility />
+        route: "/pages/landing-pages/esg",
+        component: <ESG />
       },
       {
         name: "안전보건경영",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/landing-pages/esg",
         component: <Facility />
       },
       {
         name: "환경경영",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/landing-pages/esg",
         component: <Facility />
       },
       {
         name: "윤리경영",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/landing-pages/esg",
         component: <Facility />
       },
       {
         name: "사이버신문고",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/landing-pages/esg",
         component: <Facility />
       },
     ],

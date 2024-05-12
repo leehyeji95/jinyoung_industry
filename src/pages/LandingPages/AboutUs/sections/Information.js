@@ -58,7 +58,7 @@ function Information() {
                       bgColor="light"
                       icon="policy"
                       title="경영방침"
-                      description="진영공업은 고객사 다변화에 따른 손실의 최소화 및 품질 시스템의 정착화를 위해 노력합니다."
+                      description="진영공업은 고객사 다변화에 따른 손실의 최소화 및 품질 시스템의 정착화를 위해 &nbsp; &nbsp; 노력합니다."
                   />
                 </MKBox>
               </Grid>
@@ -78,7 +78,7 @@ function Information() {
                       bgColor="light"
                       icon="rule_settings"
                       title="품질방침"
-                      description="품질은 진영공업 주식회사의 명예와 자존심이며, 고객을 위한 품질로 승부하겠습니다.  &nbsp;"
+                      description="품질은 진영공업 명예와 자존심이며, 고객을 위한 품질로 승부하겠습니다. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
                   />
                 </MKBox>
               </Grid>

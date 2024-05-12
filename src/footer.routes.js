@@ -26,11 +26,11 @@ export default {
     {
       name: "ESG",
       items: [
-        { name: "SHE 방침", href: "/pages/landing-pages/about-us" },
-        { name: "안전보건경영", href: "/pages/landing-pages/about-us" },
-        { name: "환경경영", href: "/pages/landing-pages/about-us" },
-        { name: "윤리경영", href: "/pages/landing-pages/about-us" },
-        { name: "사이버신문고", href: "/pages/landing-pages/about-us" },
+        { name: "SHE 방침", href: "/pages/landing-pages/esg" },
+        { name: "안전보건경영", href: "/pages/landing-pages/esg" },
+        { name: "환경경영", href: "/pages/landing-pages/esg" },
+        { name: "윤리경영", href: "/pages/landing-pages/esg" },
+        { name: "사이버신문고", href: "/pages/landing-pages/esg" },
       ],
     },
     {
