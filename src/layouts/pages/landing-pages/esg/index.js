@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
-import ESG from "pages/LandingPages/ESG";
+import ESG from "pages/LandingPages/Esg";
 
 export default function EsgPage() {
   return <ESG />;

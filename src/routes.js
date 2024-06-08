@@ -27,11 +27,6 @@ const routes = [
         route: "/pages/landing-pages/about-us",
         component: <AboutUs />
       },
-      // {
-      //   name: "조직도",
-      //   route: "/pages/landing-pages/about-us",
-      //   component: <AboutUs />
-      // },
       {
         name: "오시는 길",
         route: "/pages/landing-pages/about-us",
@@ -75,7 +70,7 @@ const routes = [
     icon: <Icon>article</Icon>,
     collapse: [
       {
-        name: "시험 측정기 및 설비",
+        name: "설비 보유 현황",
         route: "/pages/landing-pages/facilities",
         component: <Facility />
       },
@@ -84,11 +79,6 @@ const routes = [
         route: "/pages/landing-pages/facilities",
         component: <Facility />
       },
-      // {
-      //   name: "공정 흐름도",
-      //   route: "/pages/landing-pages/facilities",
-      //   component: <Facility />
-      // },
       {
         name: "고객사 및 적용차종",
         route: "/pages/landing-pages/facilities",
