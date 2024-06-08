@@ -35,7 +35,7 @@ export default {
     {
       name: "설비현황",
       items: [
-        { name: "설비현황", route: "/pages/landing-pages/facilities" },
+        { name: "설비 보유 현황", route: "/pages/landing-pages/facilities" },
         { name: "주요 생산품", route: "/pages/landing-pages/facilities" },
         { name: "고객사 및 적용차종", route: "/pages/landing-pages/facilities" },
         { name: "인증현황", route: "/pages/landing-pages/facilities" },
