@@ -2,10 +2,14 @@
 import Icon from "@mui/material/Icon";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
-import Facility from "layouts/pages/landing-pages/facilities";
-import ESG from "layouts/pages/landing-pages/esg";
+import AboutUs from "layouts/pages/about-us";
+import Facility from "layouts/pages/facilities";
 import AutorenewIcon from '@mui/icons-material/Autorenew';
+import Ethic from "./pages/LandingPages/Esg/Ethic";
+import Environment from "./pages/LandingPages/Esg/Environment";
+import Report from "layouts/pages/esg/report";
+import She from "./pages/LandingPages/Esg/She";
+import Safety from "./pages/LandingPages/Esg/Safety";
 
 const routes = [
   {
@@ -19,17 +23,17 @@ const routes = [
     collapse: [
       {
         name: "기업 개요",
-        route: "/pages/landing-pages/about-us",
+        route: "/pages/about-us",
         component: <AboutUs />
       },
       {
         name: "기업이념 및 경영방침",
-        route: "/pages/landing-pages/about-us",
+        route: "/pages/about-us",
         component: <AboutUs />
       },
       {
         name: "오시는 길",
-        route: "/pages/landing-pages/about-us",
+        route: "/pages/about-us",
         component: <AboutUs />
       },
     ],
@@ -40,28 +44,28 @@ const routes = [
     collapse: [
       {
         name: "SHE 방침",
-        route: "/pages/landing-pages/esg",
-        component: <ESG />
+        route: "/pages/esg/She",
+        component: <She />
       },
       {
         name: "안전보건경영",
-        route: "/pages/landing-pages/esg",
-        component: <Facility />
+        route: "/pages/esg/safety",
+        component: <Safety />
       },
       {
         name: "환경경영",
-        route: "/pages/landing-pages/esg",
-        component: <Facility />
+        route: "/pages/esg/environment",
+        component: <Environment />
       },
       {
         name: "윤리경영",
-        route: "/pages/landing-pages/esg",
-        component: <Facility />
+        route: "/pages/esg/ethic",
+        component: <Ethic />
       },
       {
         name: "사이버신문고",
-        route: "/pages/landing-pages/esg",
-        component: <Facility />
+        route: "/pages/esg/report",
+        component: <Report />
       },
     ],
   },
@@ -71,22 +75,22 @@ const routes = [
     collapse: [
       {
         name: "설비 보유 현황",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
         component: <Facility />
       },
       {
         name: "주요 생산품",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
         component: <Facility />
       },
       {
         name: "고객사 및 적용차종",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
         component: <Facility />
       },
       {
         name: "인증현황",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
         component: <Facility />
       },
 

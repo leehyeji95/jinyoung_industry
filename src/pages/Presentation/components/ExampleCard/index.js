@@ -61,7 +61,7 @@ function ExampleCard({ image, name, ...rest }) {
       {name ? (
         <MKBox mt={1} ml={1} lineHeight={1}>
           {name && (
-            <MKTypography variant="h6" fontWeight="bold" verticalAlign="center">
+            <MKTypography variant="h7" fontWeight="bold" verticalAlign="center" pl={3}>
               {name}
             </MKTypography>
           )}

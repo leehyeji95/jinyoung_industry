@@ -99,7 +99,7 @@ function ESG() {
                 }
               })}
             >
-              지속가능경영
+              지속 가능 경영
             </MKTypography>
           </Grid>
         </Container>

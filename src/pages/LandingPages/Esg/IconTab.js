@@ -9,7 +9,6 @@ import Engineering from '@mui/icons-material/Engineering';
 import Forest from '@mui/icons-material/Forest';
 import Rule from '@mui/icons-material/Rule';
 import Mailbox from '@mui/icons-material/MarkunreadMailbox';
-import EsgTable0 from "./EsgTable0";
 
 // Images
 import SHEImage from "assets/images/SHE.png";
@@ -18,7 +17,6 @@ import environImage from "assets/images/environ.png";
 import ethicImage from "assets/images/ethic.png";
 import reportImage from "assets/images/report.png";
 
-import f2_1 from "../../../assets/images/facility2-1.png";
 import MKBox from "../../../components/MKBox";
 
 function CustomTabPanel(props) {

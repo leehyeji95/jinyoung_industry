@@ -34,12 +34,12 @@ import FilledInfoCard from "../../../../examples/Cards/InfoCards/FilledInfoCard"
 
 function Information() {
   return (
-    <MKBox component="section" py={5}>
-      <Container>
-        <Grid container spacing={3} alignItems="center" mx="auto">
-          <MKTypography variant="h3" color="gray" fontWeight="bold" mb={2}>
-            기업이념 및 경영방침
-          </MKTypography>
+      <MKBox component="section" py={5}>
+        <Container>
+          <Grid container spacing={3} alignItems="center" mx="auto">
+            <MKTypography variant="h3" color="gray" fontWeight="bold" mb={2}>
+              기업이념 및 경영방침
+            </MKTypography>
           <Grid item xs={12} lg={12}>
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
