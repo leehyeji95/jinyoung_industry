@@ -100,14 +100,16 @@ function Ethic() {
                 }}
             >
             <MKBox component="section" py={5}>
+                <Container>
                     <Grid container spacing={3} alignItems="center" mx="auto">
                         <Grid item xs={12} lg={12}>
-                            <MKBox component="img" src={ethicImage} width="100%"/>
+                            <MKBox component="img" src={ethicImage} width="90%"/>
                         </Grid>
                     </Grid>
+                </Container>
             </MKBox>
             <Container>
-            <Grid item xs={9} lg={9} >
+            <Grid item xs={12} lg={12} >
                 <Grid container justifyContent="center" justifyItems="center" alignItems="center">
                     <Grid item xs={9} md={3}>
                         {/*<MKBox>윤리규범*/}
