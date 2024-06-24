@@ -50,7 +50,7 @@ function Posts() {
               description="수분 측정기, 3차원 스캐너기, 분광 색차계 등 시험측정기와 사출기 및 로보트 등 설비현황 목록"
               action={{
                 type: "internal",
-                route: "/pages/landing-pages/facilities",
+                route: "/pages/facilities",
                 color: "info",
                 label: "더 알아보기",
               }}
@@ -63,7 +63,7 @@ function Posts() {
               description="대원산업 SG2 차종, 엠시트 GN7 차종에 들어간 SHIELD COVER PWR 등 생산품 목록"
               action={{
                 type: "internal",
-                route: "/pages/landing-pages/facilities",
+                route: "/pages/facilities",
                 color: "info",
                 label: "더 알아보기",
               }}
@@ -77,7 +77,7 @@ function Posts() {
 
               action={{
                 type: "internal",
-                route: "/pages/landing-pages/facilities",
+                route: "/pages/facilities",
                 color: "info",
                 label: "더 알아보기",
               }}

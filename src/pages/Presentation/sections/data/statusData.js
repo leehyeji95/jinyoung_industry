@@ -28,22 +28,22 @@ export default [
       {
         image: cert1,
         name: "",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
       },
       {
         image: cert2,
         name: "",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
       },
       {
         image: cert3,
         name: "",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
       },
       {
         image: cert4,
         name: "",
-        route: "/pages/landing-pages/facilities",
+        route: "/pages/facilities",
       },
     ],
   },
@@ -54,7 +54,7 @@ export default [
   //     {
   //       image: sales,
   //       name: "매출현황",
-  //       route: "/pages/landing-pages/facilities",
+  //       route: "/pages/facilities",
   //     },
   //   ],
   // },
