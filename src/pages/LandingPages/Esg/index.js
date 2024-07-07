@@ -44,7 +44,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import PropTypes from "prop-types";
-import IconTabs from "./IconTab";
+import IconTabs from "./sections/IconTab";
 import TransparentModalCard from "../../../examples/Cards/BlogCards/TransparentModalCard";
 import product1 from "../../../assets/images/product1.png";
 import product3 from "../../../assets/images/product_main.png";

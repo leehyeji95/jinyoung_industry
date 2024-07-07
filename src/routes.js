@@ -5,11 +5,12 @@ import Icon from "@mui/material/Icon";
 import AboutUs from "layouts/pages/about-us";
 import Facility from "layouts/pages/facilities";
 import AutorenewIcon from '@mui/icons-material/Autorenew';
-import Ethic from "./pages/LandingPages/Esg/Ethic";
-import Environment from "./pages/LandingPages/Esg/Environment";
+import Ethic from "./pages/LandingPages/Esg/sections/Ethic";
+import Environment from "./pages/LandingPages/Esg/sections/Environment";
 import Report from "layouts/pages/esg/report";
-import She from "./pages/LandingPages/Esg/She";
-import Safety from "./pages/LandingPages/Esg/Safety";
+import She from "./pages/LandingPages/Esg/sections/She";
+import Safety from "./pages/LandingPages/Esg/sections/Safety";
+import FileBoard from "./pages/LandingPages/Esg/sections/FilesBoard";
 
 const routes = [
   {
@@ -66,6 +67,11 @@ const routes = [
         name: "사이버신문고",
         route: "/pages/esg/report",
         component: <Report />
+      },
+      {
+        name: "전자공고",
+        route: "/pages/esg/board",
+        component: <FileBoard />
       },
     ],
   },

@@ -18,8 +18,6 @@ import cert2 from "assets/images/cert2.png";
 import cert3 from "assets/images/cert3.png";
 import cert4 from "assets/images/cert4.png";
 
-import sales from "assets/images/saleschart.png";
-
 export default [
   {
     title: "인증현황",

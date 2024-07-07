@@ -22,14 +22,11 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import Contact from "pages/LandingPages/AboutUs/sections/Contact";
 
 // Images
-import groups from "assets/images/groups.png";
-import HorizontalTeamCard from "../../../../examples/Cards/TeamCards/HorizontalTeamCard";
-import MKAlert from "../../../../components/MKAlert";
 import FilledInfoCard from "../../../../examples/Cards/InfoCards/FilledInfoCard";
+
 // import team3 from "*.jpg";
 
 function Information() {

@@ -1,22 +1,17 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import MKTypography from "../../../components/MKTypography";
-import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../../components/MKTypography";
+import MKBox from "../../../../components/MKBox";
 import * as React from "react";
-import routes from "../../../routes";
-import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
-import bgImage from "../../../assets/images/about_bg.png";
-import DefaultFooter from "../../../examples/Footers/DefaultFooter";
-import footerRoutes from "../../../footer.routes";
-
-import SHEImage from "assets/images/SHE.png";
-import safetyImage from "assets/images/safety.png";
+import routes from "../../../../routes";
+import DefaultNavbar from "../../../../examples/Navbars/DefaultNavbar";
+import bgImage from "../../../../assets/images/about_bg.png";
+import DefaultFooter from "../../../../examples/Footers/DefaultFooter";
+import footerRoutes from "../../../../footer.routes";
 import environImage from "assets/images/environ.png";
-import ethicImage from "assets/images/ethic.png";
-import reportImage from "assets/images/report.png";
 import Card from "@mui/material/Card";
 
-function Safety() {
+function Environment() {
     return (
         <>
             <DefaultNavbar
@@ -28,7 +23,7 @@ function Safety() {
                 minHeight="75vh"
                 width="100%"
                 sx={{
-                    backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+                    backgroundImage: ({functions: {linearGradient, rgba}, palette: {gradients}}) =>
                         `${linearGradient(
                             rgba(gradients.dark.main, 0.6),
                             rgba(gradients.dark.state, 0.6)
@@ -48,12 +43,12 @@ function Safety() {
                         justifyContent="center"
                         alignItems="center"
                         flexDirection="column"
-                        sx={{ mx: "auto", textAlign: "center" }}
+                        sx={{mx: "auto", textAlign: "center"}}
                     >
                         <MKTypography
                             variant="h1"
                             color="white"
-                            sx={({ breakpoints, typography: { size } }) => ({
+                            sx={({breakpoints, typography: {size}}) => ({
                                 [breakpoints.down("md")]: {
                                     fontSize: size["3xl"]
                                 }
@@ -75,15 +70,15 @@ function Safety() {
                     boxShadow: ({boxShadows: {xxl}}) => xxl,
                 }}
             >
-            <MKBox component="section" py={5}>
-                <Container>
-                    <Grid container spacing={3} alignItems="center" mx="auto">
-                        <Grid item xs={12} lg={12}>
-                            <MKBox component="img" src={safetyImage} width="100%"/>
+                <MKBox component="section" py={5}>
+                    <Container>
+                        <Grid container spacing={3} alignItems="center" mx="auto">
+                            <Grid item xs={12} lg={12}>
+                                <MKBox component="img" src={environImage} width="100%"/>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </Container>
-            </MKBox>
+                    </Container>
+                </MKBox>
             </Card>
             <MKBox pt={6} px={1} mt={6}>
                 <DefaultFooter content={footerRoutes}/>
@@ -92,4 +87,4 @@ function Safety() {
     );
 }
 
-export default Safety;
+export default Environment;

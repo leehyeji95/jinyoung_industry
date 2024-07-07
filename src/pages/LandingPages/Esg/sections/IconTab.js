@@ -17,7 +17,7 @@ import environImage from "assets/images/environ.png";
 import ethicImage from "assets/images/ethic.png";
 import reportImage from "assets/images/report.png";
 
-import MKBox from "../../../components/MKBox";
+import MKBox from "../../../../components/MKBox";
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;

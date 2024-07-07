@@ -1,7 +1,5 @@
 import {useCallback, useRef} from "react";
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -11,19 +9,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Image
-import f1_1 from "assets/images/facility1-1.png";
-import f1_2 from "assets/images/facility1-2.png";
-import f1_3 from "assets/images/facility1-3.png";
-import f1_4 from "assets/images/facility1-4.png";
-import f1_5 from "assets/images/facility1-5.png";
 import f2_1 from "assets/images/facility2-1.png";
 import f2_2 from "assets/images/facility2-2.png";
 import f2_3 from "assets/images/facility2-3.png";
 import f2_4 from "assets/images/facility2-4.png";
 import f2_5 from "assets/images/facility2-5.png";
 import f2_6 from "assets/images/facility2-6.png";
-
-import Icon from "@mui/material/Icon";
 
 
 function ImageSlider() {

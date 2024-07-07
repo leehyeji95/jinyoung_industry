@@ -1,22 +1,18 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import MKTypography from "../../../components/MKTypography";
-import MKBox from "../../../components/MKBox";
+import MKTypography from "../../../../components/MKTypography";
+import MKBox from "../../../../components/MKBox";
 import * as React from "react";
-import routes from "../../../routes";
-import DefaultNavbar from "../../../examples/Navbars/DefaultNavbar";
-import bgImage from "../../../assets/images/about_bg.png";
-import DefaultFooter from "../../../examples/Footers/DefaultFooter";
-import footerRoutes from "../../../footer.routes";
+import routes from "../../../../routes";
+import DefaultNavbar from "../../../../examples/Navbars/DefaultNavbar";
+import bgImage from "../../../../assets/images/about_bg.png";
+import DefaultFooter from "../../../../examples/Footers/DefaultFooter";
+import footerRoutes from "../../../../footer.routes";
 
 import SHEImage from "assets/images/SHE.png";
-import safetyImage from "assets/images/safety.png";
-import environImage from "assets/images/environ.png";
-import ethicImage from "assets/images/ethic.png";
-import reportImage from "assets/images/report.png";
 import Card from "@mui/material/Card";
 
-function Environment() {
+function She() {
     return (
         <>
             <DefaultNavbar
@@ -79,7 +75,7 @@ function Environment() {
                 <Container>
                     <Grid container spacing={3} alignItems="center" mx="auto">
                         <Grid item xs={12} lg={12}>
-                            <MKBox component="img" src={environImage} width="100%"/>
+                            <MKBox component="img" src={SHEImage} width="100%"/>
                         </Grid>
                     </Grid>
                 </Container>
@@ -92,4 +88,4 @@ function Environment() {
     );
 }
 
-export default Environment;
+export default She;

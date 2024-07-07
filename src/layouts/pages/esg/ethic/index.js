@@ -1,4 +1,4 @@
-import Ethic from "pages/LandingPages/Esg/Ethic";
+import Ethic from "pages/LandingPages/Esg/sections/Ethic";
 
 export default function EthicPage() {
     return <Ethic />;

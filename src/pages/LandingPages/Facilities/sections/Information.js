@@ -22,21 +22,12 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-import Contact from "pages/LandingPages/AboutUs/sections/Contact";
-import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
 
 // Images
-import facility1 from "assets/images/facility1.png";
-import facility2 from "assets/images/facility2.png";
-import product from "assets/images/product.png";
-import flowchart from "assets/images/flowchart.png";
 import car from "assets/images/car.png";
 import certification from "assets/images/certification.png";
 import product1 from "assets/images/product1.png";
 import product3 from "assets/images/product_main.png";
-
-import ImageSlider from "./ImageSlider";
 import TransparentModalCard from "examples/Cards/BlogCards/TransparentModalCard";
 import Team from "../../AboutUs/sections/Team";
 
@@ -64,14 +55,14 @@ function Information() {
                         <Grid item xs={12} sm={6} lg={6} >
                             <TransparentModalCard
                                 image={product1}
-                                title="대원산업 SV 차종"
+                                title="카니발"
                                 type="1"
                             />
                         </Grid>
                         <Grid item xs={12} sm={6} lg={6}>
                             <TransparentModalCard
                                 image={product3}
-                                title="엠시트 GN7 차종"
+                                title="그랜져"
                                 type="2"
                             />
                         </Grid>

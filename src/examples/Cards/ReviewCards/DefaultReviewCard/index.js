@@ -24,79 +24,20 @@ import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
 import MKTypography from "components/MKTypography";
 
-function DefaultReviewCard({ color, image, name, date, review, rating }) {
-  const ratings = {
-    0.5: [
-      <Icon key={1}>star_outline</Icon>,
-      <Icon key={2}>star_outline</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    1: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star_outline</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    1.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star_half</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    2: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    2.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star_half</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    3: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    3.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star_half</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    4: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star</Icon>,
-      <Icon key={5}>star_outline</Icon>,
-    ],
-    4.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star</Icon>,
-      <Icon key={5}>star_half</Icon>,
-    ],
-    5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star</Icon>,
-      <Icon key={5}>star</Icon>,
-    ],
-  };
+import {Link} from "react-router-dom";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  color: gray;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: underline;
+  }
+`;
+
+function DefaultReviewCard({ color, image, name, date, file, filename }) {
 
   return (
     <MKBox
@@ -121,7 +62,8 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           display="block"
           variant={image ? "button" : "h6"}
           fontWeight="bold"
-          color={color === "transparent" || color === "light" ? "dark" : "white"}
+          // color={color === "transparent" || color === "light" ? "dark" : "white"}
+          color={"dark"}
           mb={0.5}
         >
           {name}
@@ -130,7 +72,8 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           variant={image ? "caption" : "button"}
           fontWeight="regular"
           lineHeight={1}
-          color={color === "transparent" || color === "light" ? "text" : "white"}
+          // color={color === "transparent" || color === "light" ? "text" : "white"}
+          color={"dark"}
           sx={{ display: "flex", alignItems: "center" }}
         >
           <Icon>schedule</Icon>&nbsp;
@@ -142,7 +85,8 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
         color={color === "transparent" || color === "light" ? "text" : "white"}
         my={4}
       >
-        &quot;{review}&quot;
+        <br/>
+        {/*&quot;&quot;*/}
       </MKTypography>
       <MKTypography
         variant="h4"
@@ -155,9 +99,17 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           "& .material-icons-round": {
             ml: -0.375,
           },
+
+          "a.link:hover, .link:hover, a.link:focus, .link:focus": {
+            textDecoration: "underline",
+          },
         }}
       >
-        {ratings[rating]}
+        {/*<StyledLink to={file && file} target="_blank">*/}
+        {/*  {filename}*/}
+        {/*</StyledLink>*/}
+        <a href={file && file} target="_blank" style={{color: "gray", textDecoration: "underline !important"}}>{filename}</a>
+
       </MKTypography>
     </MKBox>
   );
@@ -165,7 +117,8 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
 
 // Setting default values for the props of DefaultReviewCard
 DefaultReviewCard.defaultProps = {
-  color: "transparent",
+  // color: "transparent",
+  color: "white",
   image: "",
 };
 
