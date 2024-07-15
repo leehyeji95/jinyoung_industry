@@ -30,7 +30,7 @@ export default {
         { name: "환경경영", route: "/pages/esg/environment" },
         { name: "윤리경영", route: "/pages/esg/ethic" },
         { name: "사이버신문고", route: "/pages/esg/report" },
-        { name: "전자공고", route: "/pages/esg/board" },
+        { name: "시행규칙", route: "/pages/esg/board" },
       ],
     },
     {

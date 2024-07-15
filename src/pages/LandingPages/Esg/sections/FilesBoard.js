@@ -60,7 +60,7 @@ function FileBoard() {
                                 }
                             })}
                         >
-                            전자공고
+                            시행규칙
                         </MKTypography>
                     </Grid>
                 </Container>

@@ -69,7 +69,7 @@ const routes = [
         component: <Report />
       },
       {
-        name: "전자공고",
+        name: "시행규칙",
         route: "/pages/esg/board",
         component: <FileBoard />
       },
